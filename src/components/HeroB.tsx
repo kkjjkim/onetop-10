@@ -23,13 +23,13 @@ export const HeroB: React.FC = () => {
                 >
                     <h1 style={{ wordBreak: 'keep-all' }}>
                         <span style={{ color: "var(--primary)", fontSize: "0.8em", display: "block", marginBottom: "8px" }}>[긴급] 2026년 정책자금</span>
-                        <span style={{ whiteSpace: "nowrap" }}>내게 맞는 정책자금 찾기</span><br />
-                        <span style={{ fontSize: "0.75em", fontWeight: "500", opacity: 0.9 }}>(30초 소요)</span>
+                        정책자금, 한 번 반려되면<br />
+                        <span style={{ whiteSpace: "nowrap" }}>6개월간 재신청이 불가능합니다.</span>
                     </h1>
                     <p className="hero-subtitle">
-                        기업마다 받을 수 있는 자금이 다릅니다.<br />
-                        국가공인 경영지도사가 직접 진단하고,<br />
-                        대표님 기업에 맞는 자금 로드맵을 설계해 드립니다.
+                        서류 하나 잘못 쓰면 한도도 깎입니다.<br />
+                        첫 시도에서 최대한 받아야 합니다.<br />
+                        국가공인 경영지도사가 첫 신청부터 직접 설계합니다.
                     </p>
                     <div className="hero-actions">
                         <a href="http://pf.kakao.com/_FzsBG/chat?utm_source=hero_b" target="_blank" rel="noopener noreferrer" className="btn-primary">무료 기업 진단 받기</a>

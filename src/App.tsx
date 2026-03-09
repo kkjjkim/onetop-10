@@ -20,16 +20,26 @@ function App() {
   const [heroVariant, setHeroVariant] = useState<'A' | 'B' | null>(null);
 
   useEffect(() => {
-    // Check if variant is already saved in localStorage
-    const savedVariant = localStorage.getItem('hero_ab_variant') as 'A' | 'B' | null;
+    // 1. Check URL parameters first (e.g., ?v=a or ?v=b)
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlVariant = urlParams.get('v');
 
+    if (urlVariant === 'a' || urlVariant === 'A') {
+      setHeroVariant('A');
+      localStorage.setItem('hero_ab_variant', 'A');
+      return;
+    } else if (urlVariant === 'b' || urlVariant === 'B') {
+      setHeroVariant('B');
+      localStorage.setItem('hero_ab_variant', 'B');
+      return;
+    }
+
+    // 2. If no URL parameter, fall back to saved preference or default to A
+    const savedVariant = localStorage.getItem('hero_ab_variant') as 'A' | 'B' | null;
     if (savedVariant) {
       setHeroVariant(savedVariant);
     } else {
-      // Randomly assign 'A' or 'B' (50% chance)
-      const newVariant = Math.random() < 0.5 ? 'A' : 'B';
-      localStorage.setItem('hero_ab_variant', newVariant);
-      setHeroVariant(newVariant);
+      setHeroVariant('A'); // Default to A if visiting without parameter
     }
   }, []);
 
