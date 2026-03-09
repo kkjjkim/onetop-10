@@ -1,0 +1,21 @@
+.footer-section {
+    padding: 64px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content h4 {
+    font-size: 1.25rem;
+    color: var(--text-inverse);
+    margin-bottom: 16px;
+}
+
+.footer-info {
+    font-size: 0.875rem;
+    color: #8C8C8C;
+    line-height: 1.8;
+}
+
+.footer-copyright {
+    font-size: 0.75rem;
+    color: #595959;
+}

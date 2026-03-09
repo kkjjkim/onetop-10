@@ -1,0 +1,121 @@
+.diff-header {
+    margin-bottom: 64px;
+}
+
+.diff-grid-bento {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+@media (min-width: 992px) {
+    .diff-grid-bento {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(280px, auto);
+    }
+
+    .card-large {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+}
+
+.diff-bento-card {
+    background: var(--bg-secondary);
+    border-radius: var(--border-radius-lg);
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid var(--border-color);
+}
+
+.diff-bento-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 128, 96, 0.3);
+}
+
+.bg-primary-light {
+    background-color: rgba(0, 128, 96, 0.05);
+    /* very light green */
+    border-color: rgba(0, 128, 96, 0.2);
+}
+
+.bento-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.bento-num {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #DDE0E4;
+    /* Light subtle gray */
+    line-height: 1;
+    margin-bottom: 24px;
+}
+
+.bento-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+
+.bento-content p {
+    color: var(--text-secondary);
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+.diff-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    border-radius: var(--border-radius-lg);
+    gap: 32px;
+}
+
+@media (min-width: 768px) {
+    .diff-stats {
+        flex-direction: row;
+        gap: 0;
+    }
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.stat-num {
+    font-size: 3rem;
+    font-weight: 800;
+    display: block;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.stat-divider {
+    width: 1px;
+    height: 60px;
+    background-color: var(--border-color);
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .stat-divider {
+        display: block;
+    }
+}

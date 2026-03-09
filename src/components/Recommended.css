@@ -1,0 +1,40 @@
+.rec-layout {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.rec-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.rec-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 24px;
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+    transition: border-color 0.2s ease;
+}
+
+.rec-item:hover {
+    border-color: var(--primary);
+}
+
+.rec-item .check {
+    color: var(--primary);
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin-top: 2px;
+}
+
+.rec-item p {
+    font-size: 1.125rem;
+    color: var(--text-primary);
+    font-weight: 500;
+    line-height: 1.6;
+}

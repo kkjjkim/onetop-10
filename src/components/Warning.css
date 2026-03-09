@@ -1,0 +1,114 @@
+.warning-title {
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    margin-bottom: 64px;
+    line-height: 1.3;
+}
+
+.warning-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .warning-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.warning-card {
+    background: rgba(255, 255, 255, 0.05);
+    /* very faint white for dark mode */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px 32px;
+    border-radius: var(--border-radius-md);
+    text-align: left;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.warning-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.warning-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 24px;
+}
+
+.warning-card h3 {
+    font-size: 1.25rem;
+    color: var(--text-inverse);
+    margin-bottom: 12px;
+}
+
+.warning-card p {
+    color: #A6A6A6;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.warning-solution {
+    background: linear-gradient(180deg, rgba(0, 128, 96, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+    border-top: 2px solid var(--primary);
+    padding: 64px 24px;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 80px auto 0;
+}
+
+.warning-solution h3 {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    line-height: 1.4;
+}
+
+.warning-solution p {
+    font-size: 1.125rem;
+    color: #D9D9D9;
+    line-height: 1.8;
+}
+
+.warning-solution strong {
+    color: var(--text-inverse);
+    font-weight: 700;
+}
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.news-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.news-card {
+    background: #2a2a2a;
+    padding: 20px 24px;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary);
+    text-align: left;
+}
+
+.news-meta {
+    display: block;
+    font-size: 0.875rem;
+    color: #A6A6A6;
+    margin-bottom: 8px;
+}
+
+.news-card h4 {
+    font-size: 1.125rem;
+    color: var(--text-inverse);
+    margin: 0;
+    line-height: 1.4;
+    font-weight: 500;
+}
