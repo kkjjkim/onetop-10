@@ -8,7 +8,7 @@ import './Hero.css';
 // 대표님의 강력한 메시지와 즉각적인 행동(CTA)을 유도하는 섹션입니다.
 // Framer Motion(motion 라이브러리)을 사용해 부드럽게 나타나는 애니메이션을 적용했습니다.
 // -------------------------------------------------------------
-export const Hero: React.FC = () => {
+export const HeroA: React.FC = () => {
 
     return (
         <section className="hero-section bg-dark">
@@ -32,7 +32,7 @@ export const Hero: React.FC = () => {
                         대표님 기업에 맞는 자금 로드맵을 설계해 드립니다.
                     </p>
                     <div className="hero-actions">
-                        <a href="http://pf.kakao.com/_FzsBG/chat" target="_blank" rel="noopener noreferrer" className="btn-primary">무료 기업 진단 받기</a>
+                        <a href="http://pf.kakao.com/_FzsBG/chat?utm_source=hero_a" target="_blank" rel="noopener noreferrer" className="btn-primary">무료 기업 진단 받기</a>
                     </div>
                     <div className="hero-social-proof">
                         <div className="proof-item">
