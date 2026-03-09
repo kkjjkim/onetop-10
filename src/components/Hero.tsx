@@ -21,9 +21,9 @@ export const Hero: React.FC = () => {
                     viewport={{ once: true, margin: "-100px" }} // 스크롤 시 한 번만 실행되도록 설정
                     transition={{ duration: 0.8, ease: "easeOut" }} // 0.8초 동안 부드럽게 전환
                 >
-                    <h1>
+                    <h1 style={{ wordBreak: 'keep-all' }}>
                         <span style={{ color: "var(--primary)", fontSize: "0.8em", display: "block", marginBottom: "8px" }}>[긴급] 2026년 정책자금</span>
-                        우리 회사 한도 조회하기<br />
+                        <span style={{ whiteSpace: "nowrap" }}>우리 회사 한도 조회하기</span><br />
                         <span style={{ fontSize: "0.75em", fontWeight: "500", opacity: 0.9 }}>(30초 소요)</span>
                     </h1>
                     <p className="hero-subtitle">
