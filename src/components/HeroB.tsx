@@ -24,7 +24,8 @@ export const HeroB: React.FC = () => {
                     <h1 style={{ wordBreak: 'keep-all' }}>
                         <span style={{ color: "var(--primary)", fontSize: "0.8em", display: "block", marginBottom: "8px" }}>[긴급] 2026년 정책자금</span>
                         정책자금, 한 번 반려되면<br />
-                        <span style={{ whiteSpace: "nowrap" }}>6개월간 재신청이 불가능합니다.</span>
+                        <span style={{ whiteSpace: "nowrap" }}>6개월간 재신청이</span><br />
+                        <span style={{ whiteSpace: "nowrap" }}>불가능합니다.</span>
                     </h1>
                     <p className="hero-subtitle">
                         서류 하나 잘못 쓰면 한도도 깎입니다.<br />
