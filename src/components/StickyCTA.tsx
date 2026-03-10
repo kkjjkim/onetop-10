@@ -24,7 +24,7 @@ export const StickyCTA: React.FC = () => {
                 <a href="tel:01085330140" className="sticky-btn phone-btn">
                     📞 전화하기
                 </a>
-                <a href="http://pf.kakao.com/_FzsBG/chat" target="_blank" rel="noopener noreferrer" className="sticky-btn kakao-btn">
+                <a href="https://forms.gle/Yd7BM5RXHQ2Dss1r9" target="_blank" rel="noopener noreferrer" className="sticky-btn kakao-btn">
                     💬 카카오톡
                 </a>
             </div>

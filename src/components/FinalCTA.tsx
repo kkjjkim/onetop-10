@@ -32,7 +32,7 @@ export const FinalCTA: React.FC = () => {
                             지금 바로 통화하기 (010-8533-0140)
                         </a>
                         {/* 카카오톡 상담 연결 버튼 */}
-                        <a href="http://pf.kakao.com/_FzsBG/chat" target="_blank" rel="noopener noreferrer" className="btn-secondary btn-large">
+                        <a href="https://forms.gle/Yd7BM5RXHQ2Dss1r9" target="_blank" rel="noopener noreferrer" className="btn-secondary btn-large">
                             카카오톡으로 빠른 상담 예약
                         </a>
                     </div>

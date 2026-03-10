@@ -72,7 +72,7 @@ export const FreeConsultation: React.FC = () => {
                         viewport={{ once: true, margin: "-50px" }}
                         transition={{ duration: 0.6, delay: 0.4 }}
                     >
-                        <a href="http://pf.kakao.com/_FzsBG/chat" target="_blank" rel="noopener noreferrer" className="btn-primary">무료 진단 신청하기</a>
+                        <a href="https://forms.gle/Yd7BM5RXHQ2Dss1r9" target="_blank" rel="noopener noreferrer" className="btn-primary">무료 진단 신청하기</a>
                     </motion.div>
                 </div>
             </div>

@@ -33,7 +33,7 @@ export const HeroB: React.FC = () => {
                         국가공인 경영지도사가 첫 신청부터 직접 설계합니다.
                     </p>
                     <div className="hero-actions">
-                        <a href="http://pf.kakao.com/_FzsBG/chat?utm_source=hero_b" target="_blank" rel="noopener noreferrer" className="btn-primary">무료 기업 진단 받기</a>
+                        <a href="https://forms.gle/Yd7BM5RXHQ2Dss1r9" target="_blank" rel="noopener noreferrer" className="btn-primary">무료 기업 진단 받기</a>
                     </div>
                     <div className="hero-social-proof">
                         <div className="proof-item">

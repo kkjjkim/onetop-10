@@ -80,7 +80,7 @@ export const Empathy: React.FC = () => {
                     transition={{ duration: 0.6 }}
                 >
                     <h3>이제 혼자 고민하지 마세요. 5분이면 방향이 보입니다.</h3>
-                    <a href="http://pf.kakao.com/_FzsBG/chat" target="_blank" rel="noopener noreferrer" className="btn-primary mt-4">무료 상담 신청하기</a>
+                    <a href="https://forms.gle/Yd7BM5RXHQ2Dss1r9" target="_blank" rel="noopener noreferrer" className="btn-primary mt-4">무료 상담 신청하기</a>
                 </motion.div>
             </div>
         </section>
